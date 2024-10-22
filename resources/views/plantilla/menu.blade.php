@@ -26,7 +26,7 @@
                     <a id="aAlmacen" href="#" class="nav-link">
                         <i class="nav-icon fa fa-table"></i>
                         <p>
-                            Almacén
+                            Eventos
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -34,7 +34,7 @@
                         <li class="nav-item">
                             <a id="liUnidadMedida" href="/unidades" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Unidades</p>
+                                <p>Entradas</p>
                             </a>
                         </li>
                         <li class="nav-item">

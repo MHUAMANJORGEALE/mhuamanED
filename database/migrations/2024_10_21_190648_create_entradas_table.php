@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('entradas', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); // Primary key: id
+            $table->foreignId('evento_id')->constrained()->onDelete('cascade'); // Foreign key hacia 'eventos'
+            $table->string('nombre_entrada'); // Nombre de la entrada
+            $table->text('descripcion'); // Descripción de la entrada
+            $table->decimal('precio', 10, 2); // Precio de la entrada
+            $table->integer('cantidad'); // Cantidad de entradas
+            $table->timestamps(); // created_at y updated_at
         });
     }
 
